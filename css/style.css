@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_burger {
+    display: flex;
+    flex-direction: row;
+}
+
+.burger_menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger_line {
+    width: 92px;
+    height: 10px;
+    margin: 9.5px;
+    background-color: #A8A8A8;
+}
+
+.burger_text {
+    font-size: 48px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.lupa {
+    width: 92px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.prev {
+    height: 20px;
+    width: 2.5%;
+    content: "<---";
+}
+
+.next {
+    height: 20px;
+    width: 2.5%;
+    content: "--->";
+}
+
+#owl {
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_burger">
+            <div class="burger_menu">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+            <p class="burger_text">Каталог</p>
+        </div>
+        <img src="images/logo.png" class="logo">
+        <img src="images/lupa.png" class="lupa">
+    </header>
+    <section class="section">
+        <button class="prev"></button>
+        <div class="owl-carousel owl-theme" id="owl">
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+            <div> <img src="images/slider-images/img.jpg"/> </div>
+        </div>
+        <button class="next"></button>
+    </section>
+    <footer class="footer">
+        
+    </footer>
+    
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="dist/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            loop:true,
+            nav:true}
+        );
+    $('.prev').click(function(){
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+    $('.next').click(function(){
+        $('.owl-carousel').trigger('next.owl.carousel');
+    });
+    });
+</script>
+
+</body>
+</html>
