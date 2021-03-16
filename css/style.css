@@ -57,3 +57,17 @@
 #owl {
     
 }
+
+#mob_img {
+    display: none;
+}
+
+@media  screen and (max-width: 1000px) {
+    #mob_img {
+        display: block;
+    }
+    
+    #pc_img {
+        display: none;
+    }
+}
