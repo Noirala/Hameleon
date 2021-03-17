@@ -5,6 +5,7 @@
 @media screen and (max-width: 800px) {
     .image {
         height: 150px;
+        background-size: cover;
     }
     
     #mob_img {
