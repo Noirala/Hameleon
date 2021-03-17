@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title></title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.css" />
 </head>
 
 <body>
+<!--
     <header class="header">
         <div class="header_burger">
             <div class="burger_menu">
@@ -22,59 +23,82 @@
         <img src="images/logo.png" class="logo">
         <img src="images/lupa.png" class="lupa">
     </header>
+-->
     <section class="section">
-        <button class="prev"></button>
+        <!--        <button class="prev"></button>-->
         <div class="owl-carousel owl-theme" id="owl">
-            <div> <img src="images/slider-images/img.jpg" id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
-            <div> <img src="images/slider-images/img.jpg"id="pc_img"/><img src="images/slider-images/mobile-img.jpg" id="mob_img"/> </div>
+            <div>
+                <div>
+                    <img src="images/slider-images/img.jpg" id="pc_img" />
+                    <img src="images/slider-images/mobile-img.jpg" id="mob_img" />
+                </div>
+                <div class="slide_text">
+                    <h5>Hello!</h5>
+                    <p>Hello</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="images/slider-images/img.jpg" id="pc_img" />
+                    <img src="images/slider-images/mobile-img.jpg" id="mob_img" />
+                </div>
+                <div class="slide_text">
+                    <h5>Hello!</h5>
+                    <p>Hello</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="images/slider-images/img.jpg" id="pc_img" />
+                    <img src="images/slider-images/mobile-img.jpg" id="mob_img" />
+                </div>
+                <div class="slide_text">
+                    <h5>Hello!</h5>
+                    <p>Hello</p>
+                </div>
+            </div>
         </div>
-        <button class="next"></button>
+        <!--        <button class="next"></button>-->
     </section>
     <footer class="footer">
-        
+
     </footer>
-    
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="dist/owl.carousel.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
                 responsive: {
-                  0: {
-                    items: 1,
-                    nav: true
-                  },
-                  600: {
-                    items: 1,
-                    nav: false
-                  },
-                  1000: {
-                    items: 1.75,
-                    center:true,
-                    nav: true,
-                    loop: true,
-                    margin: 50
-                  }
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        center: true,
+                        nav: true,
+                        loop: true,
+                        margin: 50
+                    }
                 }
-              });
-        
-    $('.prev').click(function(){
-        $('.owl-carousel').trigger('prev.owl.carousel');
-    });
-    $('.next').click(function(){
-        $('.owl-carousel').trigger('next.owl.carousel');
-    });
-    });
-</script>
+            });
 
-</body>
-</html>
+            //    $('.prev').click(function(){
+            //        $('.owl-carousel').trigger('prev.owl.carousel');
+            //    });
+            //    $('.next').click(function(){
+            //        $('.owl-carousel').trigger('next.owl.carousel');
+            //    });
+        });
+    </script>
+
+</body></html>
