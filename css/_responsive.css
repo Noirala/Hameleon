@@ -1,0 +1,21 @@
+@media screen and (max-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+    .image {
+        height: 150px;
+    }
+    
+    #mob_img {
+        display: block;
+    }
+    
+    #pc_img {
+        display: none;
+    }
+    .slide_text {
+        position: unset;
+        display: table;
+    }
+}
